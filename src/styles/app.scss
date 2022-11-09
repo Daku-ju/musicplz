@@ -32,7 +32,7 @@ body{
     font-size: 39.06px;
 }
 
-.p{
+.text{
     font-size: 18px;
 }
 
@@ -40,7 +40,13 @@ body{
     color: white;
     font-size: 22px;
     text-decoration: none;
+    
 }
+
+.link--active{
+    border-left: solid #A0FFEE 7px;
+}
+
 
 //burger menu
 .btn{
@@ -64,6 +70,19 @@ body{
 
     font-size: 18px;
     text-transform: uppercase;
+}
+
+.menu{
+    .link{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .link:hover{
+        background-color: #A0FFEE;
+        color: black;
+        transition: all 0.2s ease-in;
+    }
 }
 
 
@@ -93,6 +112,7 @@ body{
             padding: 5px;
             margin: 15px;
         }
+
     }
     .menu--open{
         transform: translateX(0);
@@ -130,6 +150,12 @@ body{
     background-color: #3957AB;
     height: 100vh;
     overflow-x: hidden;
+    .title--big{
+        display: flex;
+        margin-top: 100%;
+        justify-content: center;
+        z-index: 3;
+    }
 }
 
 .Container__single{
@@ -164,7 +190,9 @@ body{
 .img--partiste{
     height: 230px;
     width: 230px;
-    background-color: aqua;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 //slider

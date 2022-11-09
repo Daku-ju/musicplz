@@ -12,35 +12,36 @@
 
   <link rel="stylesheet" href="styles/app.css">
   <script src="scripts/hammer.min.js" defer></script>
-  <script src="scripts/app.js" defer></script>
+  <script src="scripts/slider.js" defer></script>
 </head>
 <body>
   <header class="Container__into1">
     <nav  class="menu">
       <ul class="menu__ul">
         <li class="menu__el"><a class="link" href="index.html">Accueil</a></li>
-        <li class="menu__el"><a class="link" href="artiste.html">Indochine</a></li>
+        <li class="menu__el"><a class="link link--active" href="artiste.html">Indochine</a></li>
         <li class="menu__el"><a class="link" href="label.html">Label</a></li>
       </ul>
     </nav>
 
     <button class="btn menu__btn"> </button>
 
-    <h1 class="title title--big">Indo quoi ?</h1>
+    
     <img class="img img--intro1" src="assets/images/indo2.png" alt="" >
+    <h1 class="title title--big">Indo quoi ?</h1>
   </header>
 
   <main class="mainContainer">
 
     <section  class="Container Container__debuts Container__back">
-      <h2>Les débuts</h2>
+      <h2 class="title title--normal">Les débuts</h2>
 
-      <p>Indochine s’est un groupe crée dans les années 80 fondé par un chanteur Nicola Sirkis et un bassiste Dominique Nicolas. Leur premier single est qu’est ce qui t’as pris Françoise — Indochine</p>
+      <p class="text">Indochine s’est un groupe crée dans les années 80 fondé par un chanteur Nicola Sirkis et un bassiste Dominique Nicolas. Leur premier single est qu’est ce qui t’as pris Françoise — Indochine</p>
 
     </section>
 
     <section class="Container Container__slider">
-      <h2>Menbres du groupe</h2>
+      <h2 class="title title--normal">Menbres du groupe</h2>
       <div class="slider">
 
         <ul class="grid slider__control">
@@ -52,8 +53,8 @@
             <li class=" grid slider__el slider__el--show">
                 <div class="slider__content">
                   <img class="slider__images" src="assets/images/niko.jpg" alt="" srcset="assets/images/niko@2x.jpg">
-                    <h2 class="title title--thin" >Nicola Sirkis</h2>
-                    <p>Chanteur / Guitariste</p>
+                    <h3 class="title title--thin" >Nicola Sirkis</h3>
+                    <p class="text">Chanteur / Guitariste</p>
                 </div>
                 
             </li>
@@ -61,23 +62,23 @@
             <li class="grid slider__el">
                 <div class="slider__content">
                   <img class="slider__images" src="assets/images/marc.jpg" alt="" srcset="assets/images/marc@2x.jpg">
-                  <h2 class="title title--thin" >Marc Éliard</h2>
-                  <p>Bassiste</p>
+                  <h3 class="title title--thin" >Marc Éliard</h3>
+                  <p class="text">Bassiste</p>
                 </div>
             </li>
 
             <li class="grid slider__el">
                 <div class="slider__content">
-                  <h2 class="title title--thin" >Nicola Sirkis</h2>
-                  <p>Chanteur / Guitariste</p>
+                  <h3 class="title title--thin" >Nicola Sirkis</h3>
+                  <p class="text">Chanteur / Guitariste</p>
                 </div>
                 <img class="slider__images" src="sunset.jpg" alt="">
             </li>
 
             <li class="grid slider__el">
                 <div class="slider__content">
-                  <h2 class="title title--thin" >Nicola Sirkis</h2>
-                  <p>Chanteur / Guitariste</p>
+                  <h3 class="title title--thin" >Nicola Sirkis</h3>
+                  <p class="text">Chanteur / Guitariste</p>
                 </div>
                 <img class="slider__images" src="sunset.jpg" alt="">
             </li>
@@ -86,38 +87,38 @@
     </section>
 
     <section class="Container Container__album1 Container__back">
-      <h2>Leur premier album</h2>
-      <h3>L’Aventurier</h3>
+      <h2 class="title title--normal">Leur premier album</h2>
+      <h3 class="title title--thin">L’Aventurier</h3>
       <li><a href="">Découvrir cette album</a></li>
       <img class="img img--partiste" src="../asset/images" alt="" srcset="">
     </section>
 
     <section class="Container Container__album2">
-      <h2>Leur dernier album</h2>
-      <h3>13</h3>
+      <h2 class="title title--normal">Leur dernier album</h2>
+      <h3 class="title title--thin">13</h3>
       <li><a href="">Découvrir cette album</a></li>
       <img class="img img--partiste" src="../asset/images" alt="" srcset="">
     </section>
 
     <section class="Container Container__single1 Container__back">
-      <h2>Leur dernier single</h2>
-      <h3>Nos célébrations</h3>
+      <h2 class="title title--normal">Leur dernier single</h2>
+      <h3 class="title title--thin">Nos célébrations</h3>
       <li>Nos célébrations</li>
       <img class="img img--partiste" src="../asset/images" alt="" srcset="">
     </section>
 
     <section class="Container Container__rep">
-      <h2>Leur dernier reprise</h2>
-      <h3>3eme Sex</h3>
+      <h2 class="title title--normal">Leur dernier reprise</h2>
+      <h3 class="title title--thin">3eme Sex</h3>
       <li>3eme Sex</li>
       <img class="img img--partiste" src="../asset/images" alt="" srcset="">
     </section>
 
     <section class="Container Container__dist Container__back">
-      <h2>Leur distinctions</h2>
-      <p>En 2011, le groupe reçoit une Victoire d'honneur lors des Victoires de la musique</p>
-      <p>En 2017, Indochine reçoit un Award d'honneur lors des NRJ Music Awards pour couronner ses 36 ans de carrière.</p>
-      <p>En 2022 Nommé dans la catégorie Chanson francophone de l'année pour Nos célébrations</p>
+      <h2 class="title title--normal">Leur distinctions</h2>
+      <p class="text">En 2011, le groupe reçoit une Victoire d'honneur lors des Victoires de la musique</p>
+      <p class="text">En 2017, Indochine reçoit un Award d'honneur lors des NRJ Music Awards pour couronner ses 36 ans de carrière.</p>
+      <p class="text">En 2022 Nommé dans la catégorie Chanson francophone de l'année pour Nos célébrations</p>
     </section>
 
 
