@@ -50,16 +50,17 @@ body{
     background-image: url('../assets/images/groundmob.jpg');
     background-size: cover;
     height: 100%;
+
+    .title--thin{
+        text-align: end;
+    }
 }
 
-.mainContainer__label{
+.mainContainer__album{
     padding-top: 150px;
-    padding-bottom: 150px;
     padding-left: 25px;
     padding-right: 25px; 
-    background-image: url('../assets/images/grounindo.jpg');
-    background-size: cover;
-    width: 100%;
+
 }
 
 //img
@@ -67,4 +68,9 @@ body{
     width: 100%;
     position: absolute;
     bottom: 0px;
+}
+
+.img--album{
+    width: 100%;
+    position: absolute;
 }
