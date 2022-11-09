@@ -1,5 +1,18 @@
 "use strict";
 
+// Burger Menu
+
+const menu = document.querySelector(".menu"),
+      menuBtn = document.querySelector(".menu__btn");
+
+menuBtn.addEventListener("click", function(){
+    menu.classList.toggle("menu--open");
+    menuBtn.classList.toggle("btn--ouvert");
+
+});
+
+
+//slider
 const btnPrev = document.querySelector(".slider__btn--prev"),
       btnNext = document.querySelector(".slider__btn--next");
 
