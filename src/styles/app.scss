@@ -5,8 +5,17 @@
 
 //titre
 
+body{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    font-family: 'Jost';
+}
+
 .title{
     font-family: 'Heebo';
+    color: white;
+    margin-top: 0px;
 }
 
 .title--big{
@@ -19,4 +28,25 @@
 
 .title--thin{
     font-size: 39.06px;
+}
+
+.p{
+    font-size: 18px;
+}
+
+//section
+
+.mainContainer__into1{
+    background-color: #3957AB;
+    height: 100vh;
+}
+
+.mainContainer__single{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-image: url('../assets/images/groundmob.jpg');
+    background-size: cover;
+    height: 100%;
 }
