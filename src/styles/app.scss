@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Jost:wght@400;700&display=swap');
 @import 'utils/variables';
 @import 'components/type';
+@import 'reset.scss';
 
 
 //titre
@@ -49,4 +50,21 @@ body{
     background-image: url('../assets/images/groundmob.jpg');
     background-size: cover;
     height: 100%;
+}
+
+.mainContainer__label{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 25px;
+    padding-right: 25px; 
+    background-image: url('../assets/images/groundmob.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+//img
+.img--intro{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
