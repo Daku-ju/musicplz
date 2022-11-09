@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
-
+  <script src="js/hammer.min.js" defer></script>
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
@@ -24,23 +24,19 @@
       </ul>
     </nav>
     <h1 class="title title--big">Indo quoi ?</h1>
-    <img class="img img--intro" src="assets/images/indo2.jpg" alt="" srcset="assets/images/indo2@2x.jpg 2x">
+    <img class="img img--intro1" src="assets/images/indo2.png" alt="" >
   </header>
 
   <main class="mainContainer">
 
-    <p>“Le monde entier contre moi à ne rêver que de toi. Alors, j'ai décidé de ne voir que le bien”</p>
-    <h3>Indochine</h3>
-
-
-    <section>
+    <section  class="mainContainer__debuts mainContainer__back">
       <h2>Les débuts</h2>
 
       <p>Indochine s’est un groupe crée dans les années 80 fondé par un chanteur Nicola Sirkis et un bassiste Dominique Nicolas. Leur premier single est qu’est ce qui t’as pris Françoise — Indochine</p>
 
     </section>
 
-    <section>
+    <section class="mainContainer__slider">
       <h2>Menbres du groupe</h2>
       <div class="slider">
 
@@ -52,15 +48,24 @@
         <ul class="slider__list">
             <li class=" grid slider__el slider__el--show">
                 <div class="slider__content">
-                    <h2 >Nicola Sirkis</h2>
+                  <img class="slider__images" src="assets/images/niko.jpg" alt="" srcset="assets/images/niko@2x.jpg">
+                    <h2 class="title title--thin" >Nicola Sirkis</h2>
                     <p>Chanteur / Guitariste</p>
                 </div>
-                <img class="slider__images" src="sunset.jpg" alt="">
+                
             </li>
 
             <li class="grid slider__el">
                 <div class="slider__content">
-                  <h2 >Nicola Sirkis</h2>
+                  <img class="slider__images" src="assets/images/marc.jpg" alt="" srcset="assets/images/marc@2x.jpg">
+                  <h2 class="title title--thin" >Marc Éliard</h2>
+                  <p>Bassiste</p>
+                </div>
+            </li>
+
+            <li class="grid slider__el">
+                <div class="slider__content">
+                  <h2 class="title title--thin" >Nicola Sirkis</h2>
                   <p>Chanteur / Guitariste</p>
                 </div>
                 <img class="slider__images" src="sunset.jpg" alt="">
@@ -68,15 +73,7 @@
 
             <li class="grid slider__el">
                 <div class="slider__content">
-                  <h2 >Nicola Sirkis</h2>
-                  <p>Chanteur / Guitariste</p>
-                </div>
-                <img class="slider__images" src="sunset.jpg" alt="">
-            </li>
-
-            <li class="grid slider__el">
-                <div class="slider__content">
-                  <h2 >Nicola Sirkis</h2>
+                  <h2 class="title title--thin" >Nicola Sirkis</h2>
                   <p>Chanteur / Guitariste</p>
                 </div>
                 <img class="slider__images" src="sunset.jpg" alt="">
@@ -85,31 +82,31 @@
     </div>
     </section>
 
-    <section>
+    <section class="mainContainer__album1 mainContainer__back">
       <h2>Leur premier album</h2>
       <h3>L’Aventurier</h3>
       <li><a href="">Découvrir cette album</a></li>
     </section>
 
-    <section>
+    <section class="mainContainer__album2">
       <h2>Leur dernier album</h2>
       <h3>13</h3>
       <li><a href="">Découvrir cette album</a></li>
     </section>
 
-    <section>
+    <section class="mainContainer__single1 mainContainer__back">
       <h2>Leur dernier single</h2>
       <h3>Nos célébrations</h3>
       <li><a href="">Nos célébrations</a></li>
     </section>
 
-    <section>
+    <section class="mainContainer__rep">
       <h2>Leur dernier reprise</h2>
       <h3>3eme Sex</h3>
       <li><a href="">3eme Sex</a></li>
     </section>
 
-    <section>
+    <section class="mainContainer__dist mainContainer__back">
       <h2>Leur distinctions</h2>
       <p>En 2011, le groupe reçoit une Victoire d'honneur lors des Victoires de la musique</p>
       <p>En 2017, Indochine reçoit un Award d'honneur lors des NRJ Music Awards pour couronner ses 36 ans de carrière.</p>
