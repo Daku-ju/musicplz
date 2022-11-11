@@ -12,7 +12,20 @@ body{
     margin: 0px;
     font-family: 'Jost';
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
+
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#3957AB,black, #3957AB);  
+    border-radius: 5px;
+}
+
 
 .title{
     font-family: 'Heebo';
@@ -26,6 +39,7 @@ body{
 
 .title--normal{
     font-size: 48.83px;
+    margin-bottom: 25px;
 }
 
 .title--thin{
@@ -40,11 +54,24 @@ body{
     color: white;
     font-size: 22px;
     text-decoration: none;
-    
+
+
+    &--active{
+        border-left: solid #A0FFEE 7px;
+    }
+
+    &--fle::before{
+
+        content: url('../assets/images/flechelien.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-right: 20px;
+    }
 }
 
-.link--active{
-    border-left: solid #A0FFEE 7px;
+.text{
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 
@@ -151,10 +178,13 @@ body{
     height: 100vh;
     overflow-x: hidden;
     .title--big{
+        right: 14%;
         display: flex;
-        margin-top: 100%;
-        justify-content: center;
         z-index: 3;
+        position: absolute;
+        bottom: 15%;
+        left: 14%;
+        justify-content: center;
     }
 }
 
@@ -162,6 +192,29 @@ body{
 
     .title--thin{
         text-align: end;
+        margin-bottom: 50px;
+    }
+
+    .img--partiste{
+        border-radius: 30% 30% 0% 0%;
+        height: 320px;
+        width: 320px;
+    }
+
+    .text{
+        max-width: 282px;
+    }
+
+    .player{
+        margin-left: auto;
+        background-color: black;
+        width: 320px;
+        padding: 0px;
+        display: block;
+        margin-right: auto;
+        height: 70px;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -169,31 +222,71 @@ body{
     padding-bottom: 0px;
 }
 
+//tracker
+#player-container {
+    cursor: pointer;
+    height:40px;
+    width: 40px;
+    padding: 12px 18px;
+    z-index: 2;
+   
+    background-repeat: no-repeat!important;
+    background-position: center;
+    background-size: 16px;
+
+  
+  }
+  .play {
+    background-image: url(../assets/images/play.png);
+    cursor: pointer;
+    height:40px;
+    width: 40px;
+    padding: 12px 18px;
+    z-index: 2;
+   
+    background-repeat: no-repeat!important;
+    background-position: center;
+    background-size: 30px;
+  }
+  .pause {
+     background-image: url(../assets/images/pause.png)!important;
+  }
+  
 
 //img
-.img--intro{
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
+.img{
+    &--intro{
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+    }
+    &--intro1{
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    &--album{
+        width: 100%;
+        position: relative;
+
+        &::after{
+            content: url('../assets/images/13bef.png');
+            height: 40px;
+            width: 40px;
+            position: absolute;
+        }
+    }
+    &--partiste{
+        height: 230px;
+        width: 230px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
-.img--intro1{
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-}
-
-.img--album{
-    width: 100%;
-    position: absolute;
-}
-.img--partiste{
-    height: 230px;
-    width: 230px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 //slider
 .slider{
@@ -248,9 +341,18 @@ body{
 .slider__btn{
     grid-column: 6;
     grid-row: 6;
+
+}
+.slider__btn--next{
+    background-image: url('../assets/images/droite.svg');
+    background-repeat: no-repeat;
+    justify-items: center;
+    justify-self: flex-end;  
 }
 
 .slider__btn--prev{
+    background-image: url('../assets/images/gau.svg');
+    background-repeat: no-repeat;
     grid-row: 6;
     grid-column: 1;
     justify-items: center;
@@ -259,12 +361,13 @@ body{
 
 .slider__btn button{
     border: none;
-    background-color: blanchedalmond;
-    color: coral;
     padding: 10px 20px 8px;
     cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 0px;
+    background-color: transparent;
+    border-color: transparent;
+    width: 54.25px;
+    height:44.17px;
 }
 
 
@@ -307,8 +410,100 @@ body{
 
 @media (min-width: 700px){
 
+//container
+    .Container{
+        padding-top: 200px;
+        padding-bottom: 200px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+
+    .Container__into1{
+
+        .title--big{
+            bottom: 15%;
+        }
+
+        .img--intro{
+            z-index: 0;
+            width: 70%;
+            right: 19%;
+            display: flex;
+            position: absolute;
+            left: 19%;
+            justify-content: center;
+        }
+    }
+
     .menu__btn{
         display: none;
     }
 
+
+
+    .menu{
+        position: initial;
+        
+        &__ul{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 50px; 
+            z-index: 5;  
+        }
+        &__ul:last-child{
+            padding-right: 100px; 
+        }
+        
+
+        &__el{
+            padding-left: 10px;
+        }
+    }
+
+    .Container--flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img--partiste{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1000px){
+    .Container{
+        padding-left: 200px;
+        padding-right: 200px;
+
+        &__dist{
+            position: relative;
+        }
+
+        &__dist::after{
+        content: url('../assets/images/etoiback.png');
+        height: 40px;
+        width: 40px;
+        right: 0px;
+        position: absolute;
+        left: 64%;
+        top: 28%;
+        }
+
+        &__back{
+            background-image: url('../assets/images/groundordi.jpg');
+            background-size: cover; 
+            height: 100%;
+        }
+    }
+
+    .menu__ul:last-child{
+        padding-right: 200px;
+    }
+
+    .img--partiste{
+        height: 400px;
+        width: 400px;
+    }
 }

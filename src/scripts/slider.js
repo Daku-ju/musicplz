@@ -11,11 +11,28 @@ menuBtn.addEventListener("click", function(){
 
 });
 
+//var controlBtn = document.getElementById('player--btn');
+const controlBtn = document.querySelectorAll(".play"),
+      track = document.querySelectorAll(".track");
 
+function playPause() {
+    if (track.paused) {
+        track.play();
+        controlBtn.classList.toggle("pause")
+    } else { 
+        track.pause();
+        controlBtn.classList.toggle("pause")
+    }
+}
+
+controlBtn.addEventListener("click", playPause);
+track.addEventListener("ended", function() {
+    controlBtn.classList.toggle(".play")
+});
 
 //slider
-const btnPrev = document.querySelector(".slider__btn--prev"),
-      btnNext = document.querySelector(".slider__btn--next");
+const btnPrev = document.querySelectorAll(".slider__btn--prev"),
+      btnNext = document.querySelectorAll(".slider__btn--next");
 
 btnNext.addEventListener("click", next);
 

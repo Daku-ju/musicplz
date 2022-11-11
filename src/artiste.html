@@ -26,12 +26,17 @@
 
     <button class="btn menu__btn"> </button>
 
-    
-    <img class="img img--intro1" src="assets/images/indo2.png" alt="" >
-    <h1 class="title title--big">Indo quoi ?</h1>
+    <h1 class="title title--big">Indochine</h1>
+    <img class="img img--intro" src="assets/images/indo2.png" alt="" >
   </header>
 
   <main class="mainContainer">
+
+    <ul>
+      <li><a class="link" href="#groupe">Menbres</a></li>
+      <li><a class="link" href="#album">Album</a></li>
+      <li><a class="link" href="#single">Releases</a></li>
+    </ul>
 
     <section  class="Container Container__debuts Container__back">
       <h2 class="title title--normal">Les débuts</h2>
@@ -40,7 +45,7 @@
 
     </section>
 
-    <section class="Container Container__slider">
+    <section class="Container Container__slider" id="groupe">
       <h2 class="title title--normal">Menbres du groupe</h2>
       <div class="slider">
 
@@ -52,8 +57,8 @@
         <ul class="slider__list">
             <li class=" grid slider__el slider__el--show">
                 <div class="slider__content">
-                  <img class="slider__images" src="assets/images/niko.jpg" alt="" srcset="assets/images/niko@2x.jpg">
-                    <h3 class="title title--thin" >Nicola Sirkis</h3>
+                  <img class="slider__images" src="assets/images/niko.jpg" alt="" srcset="assets/images/niko@2x.jpg 2x">
+                    <h3 class="title title--thin">Nicola Sirkis</h3>
                     <p class="text">Chanteur / Guitariste</p>
                 </div>
                 
@@ -61,57 +66,99 @@
 
             <li class="grid slider__el">
                 <div class="slider__content">
-                  <img class="slider__images" src="assets/images/marc.jpg" alt="" srcset="assets/images/marc@2x.jpg">
-                  <h3 class="title title--thin" >Marc Éliard</h3>
+                  <img class="slider__images" src="assets/images/marc.jpg" alt="" srcset="assets/images/marc@2x.jpg 2x">
+                  <h3 class="title title--thin">Marc Éliard</h3>
                   <p class="text">Bassiste</p>
                 </div>
             </li>
 
             <li class="grid slider__el">
                 <div class="slider__content">
-                  <h3 class="title title--thin" >Nicola Sirkis</h3>
+                  <h3 class="title title--thin">Olivier Gérard</h3>
                   <p class="text">Chanteur / Guitariste</p>
                 </div>
-                <img class="slider__images" src="sunset.jpg" alt="">
+                <img class="slider__images" src="#" alt="">
             </li>
 
             <li class="grid slider__el">
                 <div class="slider__content">
-                  <h3 class="title title--thin" >Nicola Sirkis</h3>
+                  <h3 class="title title--thin">Boris Jardel</h3>
                   <p class="text">Chanteur / Guitariste</p>
                 </div>
-                <img class="slider__images" src="sunset.jpg" alt="">
+                <img class="slider__images" src="#" alt="">
             </li>
+
+            <li class="grid slider__el">
+              <div class="slider__content">
+                <img class="slider__images" src="assets/images/marc.jpg" alt="" srcset="assets/images/marc@2x.jpg 2x">
+                <h3 class="title title--thin">Ludwig Dahlberg</h3>
+                <p class="text">Bassiste</p>
+              </div>
+          </li>
+
         </ul>
     </div>
     </section>
 
-    <section class="Container Container__album1 Container__back">
-      <h2 class="title title--normal">Leur premier album</h2>
-      <h3 class="title title--thin">L’Aventurier</h3>
-      <li><a href="">Découvrir cette album</a></li>
-      <img class="img img--partiste" src="../asset/images" alt="" srcset="">
+    <section class="Container Container__album1 Container__back Container--flex" id="album">
+      <div>
+        <h2 class="title title--normal">Leur premier album</h2>
+        <h3 class="title title--thin">L’Aventurier</h3>
+        <ul>
+          <li><a class="link link--fle" href="">Découvrir cette album</a></li>
+        </ul>
+            
+      </div>
+
+      <img class="img img--partiste" src="assets/images/aven.jpg" alt="" srcset="assets/images/aven@2x.jpg 2x">
     </section>
 
-    <section class="Container Container__album2">
-      <h2 class="title title--normal">Leur dernier album</h2>
-      <h3 class="title title--thin">13</h3>
-      <li><a href="">Découvrir cette album</a></li>
-      <img class="img img--partiste" src="../asset/images" alt="" srcset="">
+    <section class="Container Container__album2 Container--flex">
+      <div>
+        <h2 class="title title--normal">Leur dernier album</h2>
+        <h3 class="title title--thin">13</h3>
+        <ul>
+          <li><a class="link link--fle" href="">Découvrir cette album</a></li>
+        </ul>  
+      </div>
+
+      <img class="img img--partiste" src="assets/images/13.jpg" alt="" srcset="assets/images/13@2x.jpg 2x">
     </section>
 
-    <section class="Container Container__single1 Container__back">
-      <h2 class="title title--normal">Leur dernier single</h2>
-      <h3 class="title title--thin">Nos célébrations</h3>
-      <li>Nos célébrations</li>
-      <img class="img img--partiste" src="../asset/images" alt="" srcset="">
+    <section id="single" class="Container Container__single1 Container__back Container--flex">
+      <div>
+         <h2 class="title title--normal">Leur dernier single</h2>
+        <h3 class="title title--thin">Nos célébrations</h3>
+        <div class="player">
+          <audio class="track" preload loop>
+            <source src="assets/musique/celebrations.mp3" type="audio/mp3">
+          </audio>
+          <div class="play"> </div>
+            <ul>
+              <li>3 eme sex</li>
+            </ul>
+        </div>   
+      </div>
+
+      <img class="img img--partiste" src="assets/images/celebration.jpg" alt="" srcset="assets/images/celebration.jpg 2x">
     </section>
 
-    <section class="Container Container__rep">
-      <h2 class="title title--normal">Leur dernier reprise</h2>
-      <h3 class="title title--thin">3eme Sex</h3>
-      <li>3eme Sex</li>
-      <img class="img img--partiste" src="../asset/images" alt="" srcset="">
+    <section class="Container Container__rep Container--flex">
+      <div>
+        <h2 class="title title--normal">Leur dernier reprise</h2>
+        <h3 class="title title--thin">3eme Sex</h3>
+        <div class="player">
+          <audio class="track" preload loop>
+            <source src="assets/musique/3sex.mp3" type="audio/mp3">
+          </audio>
+          <div class="play"> </div>
+            <ul>
+              <li>3 eme sex</li>
+            </ul>
+        </div>       
+      </div>
+
+      <img class="img img--partiste" src="assets/images/sex.jpg" alt="" srcset="assets/images/sex@2x.jpg 2x">
     </section>
 
     <section class="Container Container__dist Container__back">
