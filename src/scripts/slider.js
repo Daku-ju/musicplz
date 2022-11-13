@@ -13,8 +13,8 @@ menuBtn.addEventListener("click", function(){
 
 
 //music
-const controlBtn = document.querySelectorAll(".play"),
-      track = document.querySelectorAll(".track");
+var controlBtn = document.querySelector(".play"),
+      track = document.querySelector(".track");
 
 function playPause() {
     if (track.paused) {
@@ -30,6 +30,7 @@ controlBtn.addEventListener("click", playPause);
 track.addEventListener("ended", function() {
     controlBtn.classList.toggle(".play")
 });
+
 
 
 //slider
