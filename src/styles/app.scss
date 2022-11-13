@@ -12,7 +12,6 @@ body{
     margin: 0px;
     font-family: 'Jost';
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -30,24 +29,26 @@ body{
     font-family: 'Heebo';
     color: white;
     margin-top: 0px;
+
+    &--big{
+        font-size: 61.04px;
+    }
+
+    &--normal{
+        font-size: 48.83px;
+        margin-bottom: 25px;
+    }
+
+    &--thin{
+        font-size: 39.06px;
+        margin-bottom: 25px;
+    }
 }
 
-.title--big{
-    font-size: 61.04px;
-}
-
-.title--normal{
-    font-size: 48.83px;
-    margin-bottom: 25px;
-}
-
-.title--thin{
-    font-size: 39.06px;
-    margin-bottom: 25px;
-}
 
 .text{
     font-size: 18px;
+    line-height: 39px;
 }
 
 .link{
@@ -186,6 +187,7 @@ body{
 
 .mainContainer, .Container{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .Container{
@@ -569,19 +571,6 @@ body{
         padding-left: 200px;
         padding-right: 200px;
 
-        &__dist{
-            position: relative;
-        }
-
-        &__dist::after{
-        content: url('../assets/images/etoiback.png');
-        height: 40px;
-        width: 40px;
-        right: 0px;
-        position: absolute;
-        left: 64%;
-        top: 28%;
-        }
 
         &__back{
             background-image: url('../assets/images/groundordi.jpg');
@@ -622,6 +611,9 @@ body{
         width: 40%;
     }
 
+    .text{
+        max-width: 550px;
+    }
 
 }
 

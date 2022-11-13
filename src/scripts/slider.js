@@ -11,7 +11,8 @@ menuBtn.addEventListener("click", function(){
 
 });
 
-//var controlBtn = document.getElementById('player--btn');
+
+//music
 const controlBtn = document.querySelectorAll(".play"),
       track = document.querySelectorAll(".track");
 
@@ -30,7 +31,9 @@ track.addEventListener("ended", function() {
     controlBtn.classList.toggle(".play")
 });
 
+
 //slider
+
 const btnPrev = document.querySelectorAll(".slider__btn--prev"),
       btnNext = document.querySelectorAll(".slider__btn--next");
 
