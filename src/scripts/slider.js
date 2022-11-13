@@ -91,3 +91,26 @@ function prev(){
     }
 
 }
+
+//transition
+const liens = document.querySelectorAll(".trans");
+
+liens.forEach(pageTransition);
+
+function pageTransition(lien){
+
+    lien.addEventListener("click",function (e){
+
+        let currentLink = this.href;
+        let transition = this.getAttribute("data-transition");
+
+        document.body.classList.add("animation--"+transition);
+
+        document.body.addEventListener("animationend", function(){
+            window.location = currentLink;
+        });
+
+        e.preventDefault();
+
+    });
+}

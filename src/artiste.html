@@ -25,6 +25,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
+  <script src="scripts/app.js" defer></script>
+  <script src="scripts/musique.js" defer></script>
   <script src="scripts/hammer.min.js" defer></script>
   <script src="scripts/slider.js" defer></script>
 </head>
@@ -32,19 +34,20 @@
   <header class="Container__into1">
     <nav  class="menu">
       <ul class="menu__ul">
-        <li class="menu__el"><a class="link" href="index.html">Accueil</a></li>
-        <li class="menu__el"><a class="link link--active" href="artiste.html">Indochine</a></li>
-        <li class="menu__el"><a class="link" href="label.html">Label</a></li>
+        <li class="menu__el"><a class="link trans" data-transition="down" href="index.html">Accueil</a></li>
+        <li class="menu__el"><a class="link trans link--active" data-transition="up" href="artiste.html">Le groupe</a></li>
+        <li class="menu__el"><a class="link trans" data-transition="down" href="label.html">Label</a></li>
       </ul>
     </nav>
 
     <button class="btn menu__btn"> </button>
 
-    <h1 class="title title--big">Indochine</h1>
+    <h1 class="title title--big">Le groupe</h1>
     <img class="img img--intro" src="assets/images/indo2.png" alt="" >
   </header>
 
   <main class="mainContainer">
+    <div class="carre ">  </div>
 
     <ul class="menu menu--secondaire">
       <li><a class="link" href="#groupe">Membres</a></li>

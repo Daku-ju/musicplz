@@ -25,17 +25,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
-
+  <script src="scripts/musique.js" defer></script>
   <script src="scripts/app.js" defer></script>
 </head>
-<body>
+<body >
+
 
   <header class="Container__into1">
+
     <nav  class="menu">
       <ul class="menu__ul">
-        <li class="menu__el"><a class="link link--active" href="index.html">Accueil</a></li>
-        <li class="menu__el"><a class="link" href="artiste.html">Indochine</a></li>
-        <li class="menu__el"><a class="link" href="label.html">Label</a></li>
+        <li class="menu__el"><a class="link trans link--active" data-transition="up" href="index.html">Accueil</a></li>
+        <li class="menu__el"><a class="link trans" data-transition="down" href="artiste.html">Le groupe</a></li>
+        <li class="menu__el"><a class="link trans" data-transition="down" href="label.html">Label</a></li>
       </ul>
     </nav>
 
@@ -43,12 +45,14 @@
 
     <h1 class="title title--big">Indochine</h1>
     <img class="img img--intro" src="assets/images/indo1.jpg" alt="" srcset="assets/images/indo1@2x.jpg 2x">
+
+
   </header>
 
 
   <main class="mainContainer">
 
-    
+    <div class="carre ">  </div>
 
     <section class=" Container Container__back Container__single Container--flex">
       <div>
@@ -84,10 +88,10 @@
       
     </section>
 
-    <section class="container--flou">
+    <section class="Container--flou">
       <div class="tracklist">
         
-        <h3 class="title tile--thin">Track List</h3>
+        <h3 class="title title--thin">Track List</h3>
         <div class="list">
           <ul class="list__ul">
             <li class="link">Kimono dans l'ambulance</li>
@@ -112,7 +116,7 @@
 
 
       </div>
-      <img class="img img--album" src="assets/images/groundindo.jpg" alt="" srcset="assets/images/groundindo.jpg">
+      <img class="img img--album" src="assets/images/groundindo.jpg" alt="">
     </section>
 
     

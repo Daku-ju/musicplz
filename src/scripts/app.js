@@ -11,23 +11,25 @@ menuBtn.addEventListener("click", function(){
 
 });
 
+//transition
+const liens = document.querySelectorAll(".trans");
 
+liens.forEach(pageTransition);
 
-//var controlBtn = document.getElementById('player--btn');
-var controlBtn = document.querySelector(".play"),
-      track = document.querySelector(".track");
+function pageTransition(lien){
 
-function playPause() {
-    if (track.paused) {
-        track.play();
-        controlBtn.classList.toggle("pause")
-    } else { 
-        track.pause();
-        controlBtn.classList.toggle("pause")
-    }
+    lien.addEventListener("click",function (e){
+
+        let currentLink = this.href;
+        let transition = this.getAttribute("data-transition");
+
+        document.body.classList.add("animation--"+transition);
+
+        document.body.addEventListener("animationend", function(){
+            window.location = currentLink;
+        });
+
+        e.preventDefault();
+
+    });
 }
-
-controlBtn.addEventListener("click", playPause);
-track.addEventListener("ended", function() {
-    controlBtn.classList.toggle(".play")
-});
