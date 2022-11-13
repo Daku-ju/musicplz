@@ -55,6 +55,7 @@ body{
     color: white;
     font-size: 22px;
     text-decoration: none;
+    font-weight: bold;
 
 
     &--active{
@@ -745,6 +746,10 @@ html{
 
     animation: open 1s both;
 }
+
+.start{
+    animation: demarrage 3s;
+}
 .carre{
     width: 100vh;
     height:100vh;
@@ -759,31 +764,51 @@ html{
 
 
 .animation--up .carre{
-    animation:up .6s ease-in both;
+    animation: up .6s ease-in both;
 }
 
 .animation--down .carre{
-    animation: down .6s ease-in both;
+    animation: down .3s ease-in both;
+}
+
+@keyframes demarrage{
+
+    0%{
+        background-color: #3957AB;
+
+    }
+    50%{
+        background-color: rgba(106, 123, 165, 0.5);
+    }
+
+    100%{
+        background-color: rgba(106, 123, 165, 0.0);
+    }
+    
 }
 
 @keyframes up{
 
     0%{
+        opacity: 0;
+        height: 100%;
         background-color: #000000;
         transform: translateY(0%);
     }
 
+
     100%{
+        opacity: 1;
+        height: 100%;
         background-color: #3957AB;
-        transform: translateY(120%);
+        transform: translateY(100vh);
     }
-    
 }
 
 @keyframes down{
 
     0%{
-        opacity: 1;
+        opacity: 0;
         width: 100%;
         background-color: #000000;
         transform: translateX(0%);
@@ -794,8 +819,8 @@ html{
 
     100%{
         opacity: 1;
-        width: 1000%;
+        width: 100%;
         background-color: #3957AB;
-        transform: translateX(100%);
+        transform: translateX(100vh);
     }
 }

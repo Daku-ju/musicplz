@@ -11,6 +11,7 @@ menuBtn.addEventListener("click", function(){
 
 });
 
+
 //transition
 const liens = document.querySelectorAll(".trans");
 
