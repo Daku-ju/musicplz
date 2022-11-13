@@ -96,6 +96,10 @@ body{
     margin-bottom: 25px;
 }
 
+.menu--logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
 //burger menu
 .btn{
@@ -145,7 +149,7 @@ body{
 
 
 
-@media (max-width: 700px){
+@media (max-width: 800px){
 
     /* M E N U */
     .menu{
@@ -539,6 +543,10 @@ body{
 
         &__el{
             padding-left: 50px;
+        }
+        &--logo{
+            margin-top: 50px;
+            margin-left: 100px;
         }
     }
 
